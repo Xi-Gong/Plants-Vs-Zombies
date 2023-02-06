@@ -27,10 +27,10 @@
 ![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70)
 
 ## 运行要求
-* Ubuntu 20.04或者更新版本（本项目在Ubuntu 22.10上搭建，其他版本应该也没有问题）<br>
-* QtCreator 5.12（其他版本的QtCreator暂未测试，应该也没有问题），[下载地址](https://www.qt.io/offline-installers)<br>
+* Ubuntu 20.04或者更新版本。
+* QtCreator 5.12，[下载地址](https://www.qt.io/offline-installers)。<br>
 
-*** 注意！！！该项目不能直接运行，因为缺少游戏所需要的资源文件。资源文件后续将发布在谷歌云盘上，仅供学习 ***
+***注意！！！该项目不能直接运行，因为缺少游戏所需要的资源文件。资源文件后续将发布在谷歌云盘上，仅供学习***
 
 ## 联系方式
 **Author: Xi-Gong** <br>
