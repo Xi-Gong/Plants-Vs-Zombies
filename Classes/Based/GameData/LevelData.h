@@ -13,7 +13,7 @@
 using std::vector;
 
 struct LevelData {
-    LevelData() : zombiesFrequency(0), rewardCoinNumbers(0), firstFrequencyTime(18), _userLose(0) {}
+    LevelData() : zombiesFrequency(0), rewardCoinNumbers(0), firstFrequencyTime(18), userLose(0) {}
     ~LevelData() = default;
 
     // number of zombie attacks
@@ -24,7 +24,7 @@ struct LevelData {
     // first zombie attack time
     int firstFrequencyTime;
 
-    float _userLose; /* 玩家失败 */
+    float userLose; /* 玩家失败 */
 
     vector<int> zombiesType;
     vector<int> zombiesNumbers;

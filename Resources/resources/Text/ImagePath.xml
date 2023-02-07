@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <p World_1="resources/images/Adventure/World1/World_1"/>
+  <p Adventure="resources/images/Adventure/Adventure"/>
+  <p background_0="resources/images/Adventure/background_0"/>
+  <p background_1="resources/images/Adventure/background_1"/>
+  <p Dialog="resources/images/Dialog/Dialog"/>
+  <p Loadingscene="resources/images/LoadingScene/LoadingScene"/>
+  <p MainMenu="resources/images/MainMenu/MainMenu"/>
+  <p Particles="resources/images/Particles/Particles"/>
+  <p PlantsCard="resources/images/PlantsCard/PlantsCard"/>
+  <p Word="resources/images/Words/Word"/>
+  <p Zombies="resources/images/Zombies/Zombies"/>
+</data>

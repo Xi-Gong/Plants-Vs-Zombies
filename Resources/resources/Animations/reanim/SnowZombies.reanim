@@ -1,0 +1,124 @@
+
+SnowZombies.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Zombie_yeti_body
+  rotate: true
+  xy: 2, 18
+  size: 108, 136
+  orig: 108, 136
+  offset: 0, 0
+  index: -1
+Zombie_yeti_head
+  rotate: true
+  xy: 140, 40
+  size: 86, 85
+  orig: 86, 85
+  offset: 0, 0
+  index: -1
+Zombie_yeti_innerarm_hand
+  rotate: true
+  xy: 441, 10
+  size: 31, 30
+  orig: 31, 30
+  offset: 0, 0
+  index: -1
+Zombie_yeti_innerarm_lower
+  rotate: true
+  xy: 140, 5
+  size: 33, 64
+  orig: 33, 64
+  offset: 0, 0
+  index: -1
+Zombie_yeti_innerarm_upper
+  rotate: false
+  xy: 227, 59
+  size: 47, 67
+  orig: 47, 67
+  offset: 0, 0
+  index: -1
+Zombie_yeti_innerleg_foot
+  rotate: true
+  xy: 383, 2
+  size: 57, 23
+  orig: 57, 23
+  offset: 0, 0
+  index: -1
+Zombie_yeti_innerleg_lower
+  rotate: true
+  xy: 268, 5
+  size: 52, 51
+  orig: 52, 51
+  offset: 0, 0
+  index: -1
+Zombie_yeti_innerleg_upper
+  rotate: false
+  xy: 468, 83
+  size: 42, 43
+  orig: 42, 43
+  offset: 0, 0
+  index: -1
+Zombie_yeti_jaw
+  rotate: false
+  xy: 408, 10
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+Zombie_yeti_outerarm_hand
+  rotate: true
+  xy: 468, 50
+  size: 31, 32
+  orig: 31, 32
+  offset: 0, 0
+  index: -1
+Zombie_yeti_outerarm_lower
+  rotate: true
+  xy: 206, 6
+  size: 32, 60
+  orig: 32, 60
+  offset: 0, 0
+  index: -1
+Zombie_yeti_outerarm_upper
+  rotate: false
+  xy: 308, 61
+  size: 48, 65
+  orig: 48, 65
+  offset: 0, 0
+  index: -1
+Zombie_yeti_outerarm_upper2
+  rotate: false
+  xy: 358, 61
+  size: 48, 65
+  orig: 48, 65
+  offset: 0, 0
+  index: -1
+Zombie_yeti_outerleg_foot
+  rotate: true
+  xy: 276, 60
+  size: 66, 30
+  orig: 66, 30
+  offset: 0, 0
+  index: -1
+Zombie_yeti_outerleg_lower
+  rotate: true
+  xy: 408, 70
+  size: 56, 58
+  orig: 56, 58
+  offset: 0, 0
+  index: -1
+Zombie_yeti_outerleg_upper
+  rotate: true
+  xy: 321, 2
+  size: 57, 60
+  orig: 57, 60
+  offset: 0, 0
+  index: -1
+th
+  rotate: false
+  xy: 408, 43
+  size: 51, 25
+  orig: 51, 25
+  offset: 0, 0
+  index: -1
