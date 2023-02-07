@@ -28,9 +28,9 @@
 
 ## 运行要求
 * Ubuntu 20.04或者更新版本。
-* QtCreator 5.12，[下载地址](https://www.qt.io/offline-installers)。<br>
+* QtCreator 5.12或其他支持CMake的IDE，[QtCreator离线安装包](https://www.qt.io/offline-installers)。<br>
 
-***注意！！！该项目不能直接运行，因为缺少游戏所需要的资源文件。资源文件后续将发布在谷歌云盘上，仅供学习***
+***注意！！！本项目的游戏素材文件仅供学习，不允许任何商业用途，如有侵权请联系我***
 
 ## 联系方式
 **Author: Xi-Gong** <br>
