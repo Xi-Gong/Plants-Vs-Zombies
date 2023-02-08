@@ -931,21 +931,6 @@ UML图中我设计的基础类将详细绘制属性、方法和可达性，而LZ
 为了控制UML图的规模，枚举类和规模很小的类不进行绘制。
 \end_layout
 
-\begin_layout Standard
-最终绘制了部分重要的基础类的UML图，其他类的UML图请参见LZ项目，这里就不重新绘制了。
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename ../figures/project/pvzBasicClassUML.png
-	lyxscale 40
-	width 60text%
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 编码规范
 \end_layout
