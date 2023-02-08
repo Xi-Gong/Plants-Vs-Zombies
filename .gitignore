@@ -1,2 +1,3 @@
 ## Ignore game resources files and cmake generate files
+Resource/resources
 **/CMakeLists.txt.user
