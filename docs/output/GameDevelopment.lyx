@@ -939,7 +939,7 @@ UML图中我设计的基础类将详细绘制属性、方法和可达性，而LZ
 \begin_inset Graphics
 	filename ../figures/project/pvzBasicClassUML.png
 	lyxscale 40
-	width 60text%
+	width 80text%
 
 \end_inset
 
