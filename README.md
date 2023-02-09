@@ -19,11 +19,10 @@
 最后基于我对C++的理解，对本项目的基础类重新进行了设计，包括类与类之间的解耦，语义的明确和C++17语法的应用。
 
 ## 项目类图
-这里由于我对基础类进行了一些修改，因此类图将略有变化，后续将进行更新。
-![ClassDiagram](https://gitee.com/GITLZ/PlantsVsZombies/raw/master/ClassDiagram.png)
+这里由于我对基础类进行了一些修改，绘制了相应的UML图。完整的UML图请参见LZ的项目。
+![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png？raw=true)
 
 ## 运行示例
-![Image(图片)](https://gitee.com/GITLZ/PlantsVsZombies/raw/master/example.png)
 ![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70)
 
 
@@ -34,20 +33,29 @@
 ## 安装依赖
 编译项目前需要安装必要的依赖。
 
-首先需要安装编译cocos2dx需要的依赖。如果想了解更多，可以参考cocos2dx项目中的install-deps-linux.sh文件。
+安装编译cocos2dx需要的依赖。如果想了解更多，可以参考cocos2dx项目中的install-deps-linux.sh文件。
 ```shell
 sudo apt install libxmu-dev libglu1-mesa-dev libgl2ps-dev libxi-dev libzip-dev libpng-dev libcurl4-gnutls-dev libfontconfig1-dev libsqlite3-dev libglew-dev libssl-dev libgtk-3-dev binutils xorg-dev
 ```
 
-然后需要安装pulse audio用于播放音频
+安装pulse audio用于播放音频。
 ```shell
 sudo apt install pulseaudio
 ```
 
 ## 游戏素材
-运行本项目的游戏素材文件暂未上传，如有需要请先点亮星星，联系我时截图证明。
+运行本项目的游戏素材文件暂未上传，如有需要请先点亮星星，联系我时截图证明。另外如有侵权，请联系我。
 
 ***注意！！！游戏素材文件仅用于学习，切勿用于商业用途***
+
+## 完整文档
+docs文件夹下包含所有的文档，便于快速了解该项目。
+
+### Lyx
+docs/output下有lyx格式的文档，需要使用Lyx软件打开它，[下载地址](https://www.lyx.org/)。为了方便预览，我导出了pdf格式的文档，如果需要更好的浏览体验，请下载Lyx。
+
+### Star UML
+docs/pvzUML.mdj是项目中重要基础类的UML图，需要使用staruml软件打开。
 
 ## 联系方式
 **Author: Xi-Gong** <br>
