@@ -19,7 +19,7 @@
 最后基于我对C++的理解，对本项目的基础类重新进行了设计，包括类与类之间的解耦，语义的明确和C++17语法的应用。
 
 ## 项目类图
-这里由于我对基础类进行了一些修改，绘制了相应的UML图。完整的UML图请参见LZ的项目。
+这里由于我对基础类进行了一些修改，并绘制了相应的UML图。完整的UML图请参见LZ的项目。
 ![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png?raw=true)
 
 ## 运行示例
@@ -28,7 +28,7 @@
 
 ## 运行要求
 * Ubuntu 20.04或者更新版本。
-* QtCreator 5.12或其他支持CMake的IDE，[QtCreator离线安装包](https://www.qt.io/offline-installers)。<br>
+* [QtCreator 5.12](https://www.qt.io/offline-installers)或其他支持CMake的IDE。<br>
 
 ## 安装依赖
 编译项目前需要安装必要的依赖。
@@ -52,7 +52,7 @@ sudo apt install pulseaudio
 docs文件夹下包含所有的文档，便于快速了解该项目。
 
 ### Lyx
-docs/output下有lyx格式的文档，需要使用Lyx软件打开它，[下载地址](https://www.lyx.org/)。为了方便预览，我导出了pdf格式的文档，如果需要更好的浏览体验，请下载Lyx。
+docs/output下有lyx格式的文档，需要使用[Lyx软件](https://www.lyx.org/)打开它。为了方便预览，我导出了pdf格式的文档，如果需要更好的浏览体验，请下载Lyx。
 
 ### Star UML
 docs/pvzUML.mdj是项目中重要基础类的UML图，需要使用staruml软件打开。
