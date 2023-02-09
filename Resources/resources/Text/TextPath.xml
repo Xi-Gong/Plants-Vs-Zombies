@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <p PlantsText="/home/gx/Documents/pvz/pvz/Resources/resources/Text/PlantsText.xml"/>
+  <p GameText="/home/gx/Documents/pvz/pvz/Resources/resources/Text/GameText.xml"/>
+  <p GAMEWORLD_1DATAS="/home/gx/Documents/pvz/pvz/Resources/resources/Text/GAMEWORLD_1DATAS.json"/>
+  <!-- <p GAMEWORLD_1DATAS_DIF="/home/gx/Documents/pvz/pvz/Resources/resources/Text/GAMEWORLD_1DATAS_DIF.json"/> -->
+</data>
