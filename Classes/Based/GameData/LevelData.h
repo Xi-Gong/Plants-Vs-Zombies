@@ -24,7 +24,7 @@ struct LevelData {
     // first zombie attack time
     int firstFrequencyTime;
 
-    float userLose; /* 玩家失败 */
+    float userLose;
 
     vector<int> zombiesType;
     vector<int> zombiesNumbers;
@@ -35,7 +35,7 @@ struct LevelData {
     // each type of zombie appear probability in every attack
     vector<vector<int> > zombiesTypeProbabilityFrequency;
 
-    vector<int> gameType; /* 游戏类型 */
+    vector<int> gameType;
 };
 
 #endif  // LEVELDATA_H

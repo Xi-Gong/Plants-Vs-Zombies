@@ -103,6 +103,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     DataLoader dataLoader;
 
     // allow play 32 music in parallel
+    // not recommend to enable it
     //    AudioEngine::setMaxAudioInstance(32);
 
     // create a scene. it's an autorelease object
