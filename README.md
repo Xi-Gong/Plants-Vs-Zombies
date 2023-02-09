@@ -57,6 +57,9 @@ docs/output下有lyx格式的文档，需要使用[Lyx软件](https://www.lyx.or
 ### Star UML
 docs/pvzUML.mdj是项目中重要基础类的UML图，需要使用staruml软件打开。
 
+## 部分功能仍在开发中
+游戏进度存档，关卡逐步解锁等功能还在开发中，考虑到项目的规模，今后还会进行一些调整。
+
 ## 联系方式
 **Author: Xi-Gong** <br>
 **QQ: 1712475147** <br>
