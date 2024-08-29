@@ -17,7 +17,7 @@ GSGameResultJudgement::GSGameResultJudgement() :
 }
 
 bool GSGameResultJudgement::getZombieIsInHouse() {
-    return (*_zombie)->getZombieAnimation()->getPositionX() < _levelData->_userLose ? true : false;
+    return (*_zombie)->getZombieAnimation()->getPositionX() < _levelData->userLose ? true : false;
 }
 
 GameTypes GSGameResultJudgement::judgeUserIsLose(list<Zombies*>::iterator& zombie) {

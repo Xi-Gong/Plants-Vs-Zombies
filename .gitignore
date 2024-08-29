@@ -1,2 +1,6 @@
 ## Ignore game resources files and cmake generate files
 **/CMakeLists.txt.user
+build/
+*.zip
+*.a
+.vscode/settings.json

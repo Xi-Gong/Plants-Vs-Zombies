@@ -27,20 +27,38 @@
 
 
 ## 运行要求
-* Ubuntu 20.04或者更新版本。
-* [QtCreator 5.12](https://www.qt.io/offline-installers)或其他支持CMake的IDE。<br>
+* 目前在Ubuntu 22.04上测试通过，其他Ubuntu版本请自行测试。
+* 支持CMake的IDE，如VSCode、QtCreator。<br>
 
 ## 安装依赖
-编译项目前需要安装必要的依赖。
 
-安装编译cocos2dx需要的依赖。如果想了解更多，可以参考cocos2dx项目中的install-deps-linux.sh文件。
+1. 克隆本项目，安装cocos2dx所需的依赖。
 ```shell
-sudo apt install libxmu-dev libglu1-mesa-dev libgl2ps-dev libxi-dev libzip-dev libpng-dev libcurl4-gnutls-dev libfontconfig1-dev libsqlite3-dev libglew-dev libssl-dev libgtk-3-dev binutils xorg-dev
+git clone --recursive https://github.com/Xi-Gong/Plants-Vs-Zombies.git
+cd Plants-Vs-Zombies/cocos2d/
+sudo apt install python2.7 libxmu-dev libglu1-mesa-dev \
+    libgl2ps-dev libxi-dev libzip-dev libpng-dev \
+    libcurl4-gnutls-dev libfontconfig1-dev libsqlite3-dev \
+    libglew-dev libssl-dev libgtk-3-dev binutils xorg-dev
+python2.7 download-deps.py
+cd build
+./install-deps-linux.sh
 ```
 
-安装pulse audio用于播放音频。
+2. 安装pulse audio用于播放音频。
 ```shell
 sudo apt install pulseaudio
+```
+
+3. 修改Plants-Vs-Zombies/Resources/resources/Text/TextPath.xml，根据你克隆项目的路径更改绝对路径。
+
+4. 编译并运行项目。注意Resources目录下的内容会拷贝一份到build/bin/pvz目录下。
+```shell
+mkdir build && cd build
+cmake ..
+make
+cd bin/pvz
+./pvz
 ```
 
 ## 游戏素材
