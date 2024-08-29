@@ -1,38 +1,42 @@
 # Plants-Vs-Zombies
-## 前言 <br>
-本项目是基于cocos2dx开发的，该项目的原型最初由LZ开发并[发布在Github](https://github.com/ErLinErYi/PlantsVsZombies)。LZ项目是目前我所看到的开源的，效果最好的，功能最全的植物大战僵尸项目。由于有在Ubuntu平台下写C++练手项目的需求，因此基于该项目进行了一些改进和调整，并重新发布。
 
-## 项目简介 <br>
-我学习了LZ项目之后，发现了以下可以改进的要点:
-- LZ项目在Windows下使用Visual Studio 2017上搭建，其中通过.vcxproj管理项目文件。然而，由于Visual Studio并非免费开源的软件，而且手动配置比较繁琐，并不利于该项目的推广。
-- 项目的C++代码约有18000行左右，功能非常齐全，但是有些过于庞大了，不利于初学者学习。
-- 项目的部分资源文件通过代码进行了加密，不利于项目的理解。
-- 采用的C++11标准已经开始过时了。
+[Chinese version README click here.](README_zh_cn.md)
 
-针对以上需要改进的要点，我做了如下变动:
-- 由于cocos2dx原生支持CMake配置，因此使用CMake 3.6配置该项目。
-- 使用开源的QtCreator 5.12开发，安装方便，配置迅速。
-- 删减了一些次要的游戏效果和功能，将项目规模缩小到8000行C++代码，便于初学者学习。
-- 项目的资源文件全部进行了解密，并且以明文存储和读写。
-- 对cocos2dx库和项目代码应用C++17标准。
+## Introduction <br>
+This project is developed based on cocos2dx. The prototype of this project was originally developed by LZ and [released on Github](https://github.com/ErLinErYi/PlantsVsZombies). LZ's project is the best open-source Plants vs. Zombies project I've ever seen, with the best performance and the most complete functionality. Since I needed a C++ project to practice on the Ubuntu platform, I made some improvements and adjustments based on this project and re-released it.
 
-最后基于我对C++的理解，对本项目的基础类重新进行了设计，包括类与类之间的解耦，语义的明确和C++17语法的应用。
+## Overview <br>
+After learning LZ's project, I discovered the following areas for improvement:
+- LZ's project was set up on Windows using Visual Studio 2017, with project files managed through .vcxproj. However, since Visual Studio is not free and open-source software, and the manual configuration is relatively cumbersome, it is not conducive to promoting this project.
+- The project's C++ code is approximately 18,000 lines, which is very comprehensive but somewhat overwhelming for beginners.
+- Some of the project's resource files are encrypted through code, making the project difficult to understand.
+- The C++11 standard used in the project is becoming outdated.
 
-## 项目类图
-这里由于我对基础类进行了一些修改，并绘制了相应的UML图。完整的UML图请参见LZ的项目。
-![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png?raw=true)
+To address these areas for improvement, I made the following changes:
+- Since cocos2dx natively supports CMake configuration, I configured the project using CMake.
+- I used the open-source VSCode for development, which is easy to install and configure quickly.
+- I removed some secondary game effects and functionalities, reducing the project's size to 8,000 lines of C++ code, making it easier for beginners to learn.I removed some secondary game effects and functionalities, reducing the project's size to 8,000 lines of C++ code, making it easier for beginners to learn.
+- All of the project's resource files have been decrypted and are stored and read in plain text.
+- C++17 standard is applied to the cocos2dx library and project code.
 
-## 运行示例
-![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70)
+Finally, based on my understanding of C++, I redesigned the basic classes of this project, including decoupling between classes, clarifying semantics, and applying C++17 syntax.
+
+## Class Diagram
+Here, I made some modifications to the basic classes and drew the corresponding UML diagrams. For the complete UML diagram, please refer to LZ's project.
+<!-- ![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png?raw=true) -->
+
+## Example
+In the project’s root directory, there’s a video called `pvzExampleVideo.mkv` that shows the project in action. To avoid copyright issues, the game assets shared by LZ has been blurred. The unblurred gameplay is shown in the image below.
+<!-- ![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70) -->
 
 
-## 运行要求
-* 目前在Ubuntu 22.04上测试通过，其他Ubuntu版本请自行测试。
-* 支持CMake的IDE，如VSCode、QtCreator。<br>
+## Requirement
+* Ubuntu 22.04 (for other Ubuntu versions, please test them on your own).
+* CMake >= 3.16.
 
-## 安装依赖
+## Environment
 
-1. 克隆本项目，安装cocos2dx所需的依赖。
+1. Clone this project and install the dependencies required for Cocos2dx. Note that Cocos2dx itself is already included with the project, so there’s no need for a separate installation.
 ```shell
 git clone --recursive https://github.com/Xi-Gong/Plants-Vs-Zombies.git
 cd Plants-Vs-Zombies/cocos2d/
@@ -45,14 +49,14 @@ cd build
 ./install-deps-linux.sh
 ```
 
-2. 安装pulse audio用于播放音频。
+2. Install PulseAudio for audio playback. However, be aware that PulseAudio currently has a bug that may cause it to crash when too many sound effects are played simultaneously.
 ```shell
 sudo apt install pulseaudio
 ```
 
-3. 修改Plants-Vs-Zombies/Resources/resources/Text/TextPath.xml，根据你克隆项目的路径更改绝对路径。
+3. Modify `Plants-Vs-Zombies/Resources/resources/Text/TextPath.xml`, changing the absolute paths according to your cloned project path.
 
-4. 编译并运行项目。注意Resources目录下的内容会拷贝一份到build/bin/pvz目录下。
+4. Compile and run the project. Note that a copy of the game assets from the `Resources` directory will be placed in the build/bin/pvz directory.
 ```shell
 mkdir build && cd build
 cmake ..
@@ -61,22 +65,21 @@ cd bin/pvz
 ./pvz
 ```
 
-## 游戏素材
-***注意！！！游戏素材文件仅用于学习，切勿用于商业用途。如有侵权请联系我***
+## Game Asset
+***Note: The game asset files are for learning purposes only. Do not use them for commercial purposes. If there is any infringement, please contact me.***
 
-## 完整文档
-docs文件夹下包含所有的文档，便于快速了解该项目。
+## Documentation
+The `docs` folder contain the Chinese documentation, making it easy to quickly understand the project. English Documentation currently unavailable.
 
 ### Lyx
-docs/output下有lyx格式的文档，需要使用[Lyx软件](https://www.lyx.org/)打开它。为了方便预览，我导出了pdf格式的文档，如果需要更好的浏览体验，请下载Lyx。
+The `docs/output` folder contains documents in Lyx format, which need to be opened using Lyx software. For convenience, I have exported the documents in PDF format. For a better viewing experience, please download [Lyx](https://www.lyx.org/).
 
-### Star UML
-docs/pvzUML.mdj是项目中重要基础类的UML图，需要使用staruml软件打开。
+### StarUML
+`docs/pvzUML.mdj` is the UML diagram of the important basic classes in the project, which needs to be opened using [StarUML](https://staruml.io/download/) software.
 
-## 部分功能仍在开发中
-限于时间，游戏进度存档，关卡逐步解锁等功能尚未完成开发。另外考虑到项目的规模，今后还会进行一些调整。
+## Development In Progress
+Due to time constraints, features such as game progress saving and level unlocking are still under development. Additionally, considering the project's scale, further adjustments will be made in the future.
 
-## 联系方式
-**Author: Xi-Gong** <br>
+## Contacts
 **QQ: 1712475147** <br>
 **Email: xi_gong@foxmail.com** <br>
