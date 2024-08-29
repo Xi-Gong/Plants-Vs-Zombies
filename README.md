@@ -1,4 +1,4 @@
-# Plants-Vs-Zombies
+# Plants-Vs-Zombies (Linux version)
 
 [Chinese version README click here.](README_zh_cn.md)
 
@@ -23,11 +23,13 @@ Finally, based on my understanding of C++, I redesigned the basic classes of thi
 
 ## Class Diagram
 Here, I made some modifications to the basic classes and drew the corresponding UML diagrams. For the complete UML diagram, please refer to LZ's project.
-<!-- ![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png?raw=true) -->
+
+![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png?raw=true)
 
 ## Example
 In the project’s root directory, there’s a video called `pvzExampleVideo.mkv` that shows the project in action. To avoid copyright issues, the game assets shared by LZ has been blurred. The unblurred gameplay is shown in the image below.
-<!-- ![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70) -->
+
+![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70)
 
 
 ## Requirement
