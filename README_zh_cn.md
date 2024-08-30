@@ -1,4 +1,8 @@
 # Plants-Vs-Zombies (LZ Linux版本)
+![C++](https://img.shields.io/badge/language-C%2B%2B-red)
+![CMake](https://img.shields.io/badge/build-CMake-blue)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-Tests%20Passing-brightgreen?logo=ubuntu)
+
 ## 前言 <br>
 本项目是基于cocos2dx开发的，该项目的原型最初由LZ开发并[发布在Github](https://github.com/ErLinErYi/PlantsVsZombies)。LZ项目是目前我所看到的开源的，效果最好的，功能最全的植物大战僵尸项目。由于有在Ubuntu平台下写C++练手项目的需求，因此基于该项目进行了一些改进和调整，并重新发布。
 
@@ -16,21 +20,13 @@
 
 最后基于我对C++的理解，对本项目的基础类重新进行了设计，包括类与类之间的解耦，语义的明确和C++17语法的应用。
 
-## 项目类图
-这里由于我对基础类进行了一些修改，并绘制了相应的UML图。完整的UML图请参见LZ的项目。
-![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png?raw=true)
-
-## 运行示例
-![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70)
-
-
 ## 运行要求
 * 目前在Ubuntu 22.04上测试通过，其他Ubuntu版本请自行测试。
-* 支持CMake的IDE，如VSCode、QtCreator。<br>
+* CMake >= 3.16。<br>
 
 ## 安装依赖
 
-1. 克隆本项目，安装cocos2dx所需的依赖。
+1. 克隆本项目（先安装git-lfs），安装cocos2dx所需的依赖。注意cocos2dx已经包含在本项目中，无需额外安装。
 ```shell
 git clone --recursive https://github.com/Xi-Gong/Plants-Vs-Zombies.git
 cd Plants-Vs-Zombies/cocos2d/
@@ -48,10 +44,12 @@ cd build
 sudo apt install pulseaudio
 ```
 
-3. 修改Plants-Vs-Zombies/Resources/resources/Text/TextPath.xml，根据你克隆项目的路径更改其中的绝对路径。
+3. 修改`Plants-Vs-Zombies/Resources/resources/Text/TextPath.xml`，根据你克隆项目的路径更改其中的绝对路径。
 
-4. 编译并运行项目。注意Resources目录下的内容会拷贝一份到build/bin/pvz目录下。
+4. 编译并运行项目。注意`Resources`目录下的内容会拷贝一份到`build/bin/pvz`目录下。
 ```shell
+sudo apt install cmake build-essential ninja-build
+cd Plants-Vs-Zombies
 mkdir build && cd build
 cmake ..
 make
@@ -63,11 +61,17 @@ cd bin/pvz
 ***注意！！！游戏素材文件仅用于学习，切勿用于商业用途。如有侵权请联系我***
 
 ## 完整文档
-docs文件夹下包含中文文档，便于快速了解该项目。
+`docs`文件夹下包含中文文档，便于快速了解该项目。
+
+## 项目类图
+这里由于我对基础类进行了一些修改，并绘制了相应的UML图。完整的UML图请参见LZ的项目。
+![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png?raw=true)
+
+## 运行示例
+![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70)
 
 ## 部分功能仍在开发中
 限于时间，游戏进度存档，关卡逐步解锁等功能尚未完成开发。另外考虑到项目的规模，今后还会进行一些调整。
 
 ## 联系方式
-**QQ: 1712475147** <br>
-**Email: xi_gong@foxmail.com** <br>
+**Email: gongxi@mail.nankai.edu.cn** <br>

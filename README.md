@@ -1,6 +1,9 @@
 # Plants-Vs-Zombies (LZ Linux version)
+![C++](https://img.shields.io/badge/language-C%2B%2B-red)
+![CMake](https://img.shields.io/badge/build-CMake-blue)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-Tests%20Passing-brightgreen?logo=ubuntu)
 
-[Chinese version README click here.](README_zh_cn.md)
+[Chinese version README click here !](README_zh_cn.md)
 
 ## Introduction <br>
 This project is developed based on cocos2dx. The prototype of this project was originally developed by LZ and [released on Github](https://github.com/ErLinErYi/PlantsVsZombies). LZ's project is the best open-source Plants vs. Zombies project I've ever seen, with the best performance and the most complete functionality. Since I needed a C++ project to practice on the Ubuntu platform, I made some improvements and adjustments based on this project and re-released it.
@@ -18,16 +21,6 @@ To address these areas for improvement, I made the following changes:
 - C++17 standard is applied to the cocos2dx library and project code.
 
 Finally, based on my understanding of C++, I redesigned the basic classes of this project, including decoupling between classes, clarifying semantics, and applying C++17 syntax.
-
-## Class Diagram
-Here, I made some modifications to the basic classes and drew the corresponding UML diagrams. For the original UML diagram, please refer to LZ's project.
-
-![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png?raw=true)
-
-## Example
-In the project’s root directory, there’s a video called `pvzExampleVideo.mkv` that shows the project in action. To avoid copyright issues, the game assets shared by LZ has been blurred. The unblurred gameplay is shown in the image below.
-
-![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70)
 
 ## Requirement
 * Ubuntu 22.04 (for other Ubuntu versions, please test them on your own).
@@ -55,8 +48,10 @@ sudo apt install pulseaudio
 
 3. Modify `Plants-Vs-Zombies/Resources/resources/Text/TextPath.xml`, changing the absolute paths according to your cloned project.
 
-4. Compile and run the project. Note that a copy of the game assets from the `Resources` directory will be placed in the build/bin/pvz directory.
+4. Compile and run the project. Note that a copy of the game assets from the `Resources` directory will be placed in the `build/bin/pvz` directory.
 ```shell
+sudo apt install cmake build-essential ninja-build
+cd Plants-Vs-Zombies
 mkdir build && cd build
 cmake ..
 make
@@ -70,6 +65,15 @@ cd bin/pvz
 ## Documentation
 The `docs` folder contain the chinese documentation, making it easy to quickly understand the project. English documentation currently is unavailable.
 
+## Class Diagram
+Here, I made some modifications to the basic classes and drew the corresponding UML diagrams. For the original UML diagram, please refer to LZ's project.
+
+![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png?raw=true)
+
+## Example
+In the project’s root directory, there’s a video called `pvzExampleVideo.mkv` that shows the project in action. To avoid copyright issues, the game assets shared by LZ has been blurred. The unblurred gameplay is shown in the image below.
+
+![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70)
+
 ## Contacts
-**QQ: 1712475147** <br>
-**Email: xi_gong@foxmail.com** <br>
+**Email: gongxi@mail.nankai.edu.cn** <br>
