@@ -1,4 +1,4 @@
-# Plants-Vs-Zombies
+# Plants-Vs-Zombies (LZ Linux版本)
 ## 前言 <br>
 本项目是基于cocos2dx开发的，该项目的原型最初由LZ开发并[发布在Github](https://github.com/ErLinErYi/PlantsVsZombies)。LZ项目是目前我所看到的开源的，效果最好的，功能最全的植物大战僵尸项目。由于有在Ubuntu平台下写C++练手项目的需求，因此基于该项目进行了一些改进和调整，并重新发布。
 

@@ -35,7 +35,7 @@ In the project’s root directory, there’s a video called `pvzExampleVideo.mkv
 
 ## Environment
 
-1. Clone this project and install the dependencies required for cocos2dx. Note that cocos2dx itself is already included with the project, so there’s no need for a separate installation.
+1. Clone this project (install git-lfs first) and install the dependencies required for cocos2dx. Note that cocos2dx itself is already included with the project, so there’s no need for a separate installation.
 ```shell
 git clone --recursive https://github.com/Xi-Gong/Plants-Vs-Zombies.git
 cd Plants-Vs-Zombies/cocos2d/
@@ -69,9 +69,6 @@ cd bin/pvz
 
 ## Documentation
 The `docs` folder contain the chinese documentation, making it easy to quickly understand the project. English documentation currently is unavailable.
-
-## Development In Progress
-Due to time constraints, features such as game progress saving and level unlocking are still under development. Additionally, considering the project's scale, further adjustments will be made in the future.
 
 ## Contacts
 **QQ: 1712475147** <br>
