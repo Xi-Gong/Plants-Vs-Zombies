@@ -53,9 +53,9 @@ cd build
 sudo apt install pulseaudio
 ```
 
-1. Modify `Plants-Vs-Zombies/Resources/resources/Text/TextPath.xml`, changing the absolute paths according to your cloned project.
+3. Modify `Plants-Vs-Zombies/Resources/resources/Text/TextPath.xml`, changing the absolute paths according to your cloned project.
 
-2. Compile and run the project. Note that a copy of the game assets from the `Resources` directory will be placed in the build/bin/pvz directory.
+4. Compile and run the project. Note that a copy of the game assets from the `Resources` directory will be placed in the build/bin/pvz directory.
 ```shell
 mkdir build && cd build
 cmake ..
