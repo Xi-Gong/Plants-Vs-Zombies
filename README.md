@@ -1,4 +1,4 @@
-# Plants-Vs-Zombies (Linux version)
+# Plants-Vs-Zombies (LZ Linux version)
 
 [Chinese version README click here.](README_zh_cn.md)
 
@@ -9,20 +9,18 @@ This project is developed based on cocos2dx. The prototype of this project was o
 After learning LZ's project, I discovered the following areas for improvement:
 - LZ's project was set up on Windows using Visual Studio 2017, with project files managed through .vcxproj. However, since Visual Studio is not free and open-source software, and the manual configuration is relatively cumbersome, it is not conducive to promoting this project.
 - The project's C++ code is approximately 18,000 lines, which is very comprehensive but somewhat overwhelming for beginners.
-- Some of the project's resource files are encrypted through code, making the project difficult to understand.
 - The C++11 standard used in the project is becoming outdated.
 
 To address these areas for improvement, I made the following changes:
 - Since cocos2dx natively supports CMake configuration, I configured the project using CMake.
 - I used the open-source VSCode for development, which is easy to install and configure quickly.
-- I removed some secondary game effects and functionalities, reducing the project's size to 8,000 lines of C++ code, making it easier for beginners to learn.I removed some secondary game effects and functionalities, reducing the project's size to 8,000 lines of C++ code, making it easier for beginners to learn.
-- All of the project's resource files have been decrypted and are stored and read in plain text.
+- I removed some secondary game effects and functionalities, reducing the project's size to 8,000 lines of C++ code, making it easier for beginners to learn.
 - C++17 standard is applied to the cocos2dx library and project code.
 
 Finally, based on my understanding of C++, I redesigned the basic classes of this project, including decoupling between classes, clarifying semantics, and applying C++17 syntax.
 
 ## Class Diagram
-Here, I made some modifications to the basic classes and drew the corresponding UML diagrams. For the complete UML diagram, please refer to LZ's project.
+Here, I made some modifications to the basic classes and drew the corresponding UML diagrams. For the original UML diagram, please refer to LZ's project.
 
 ![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png?raw=true)
 
@@ -31,14 +29,13 @@ In the project’s root directory, there’s a video called `pvzExampleVideo.mkv
 
 ![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70)
 
-
 ## Requirement
 * Ubuntu 22.04 (for other Ubuntu versions, please test them on your own).
 * CMake >= 3.16.
 
 ## Environment
 
-1. Clone this project and install the dependencies required for Cocos2dx. Note that Cocos2dx itself is already included with the project, so there’s no need for a separate installation.
+1. Clone this project and install the dependencies required for cocos2dx. Note that cocos2dx itself is already included with the project, so there’s no need for a separate installation.
 ```shell
 git clone --recursive https://github.com/Xi-Gong/Plants-Vs-Zombies.git
 cd Plants-Vs-Zombies/cocos2d/
@@ -56,9 +53,9 @@ cd build
 sudo apt install pulseaudio
 ```
 
-3. Modify `Plants-Vs-Zombies/Resources/resources/Text/TextPath.xml`, changing the absolute paths according to your cloned project path.
+1. Modify `Plants-Vs-Zombies/Resources/resources/Text/TextPath.xml`, changing the absolute paths according to your cloned project.
 
-4. Compile and run the project. Note that a copy of the game assets from the `Resources` directory will be placed in the build/bin/pvz directory.
+2. Compile and run the project. Note that a copy of the game assets from the `Resources` directory will be placed in the build/bin/pvz directory.
 ```shell
 mkdir build && cd build
 cmake ..
@@ -71,13 +68,7 @@ cd bin/pvz
 ***Note: The game asset files are for learning purposes only. Do not use them for commercial purposes. If there is any infringement, please contact me.***
 
 ## Documentation
-The `docs` folder contain the Chinese documentation, making it easy to quickly understand the project. English Documentation currently unavailable.
-
-### Lyx
-The `docs/output` folder contains documents in Lyx format, which need to be opened using Lyx software. For convenience, I have exported the documents in PDF format. For a better viewing experience, please download [Lyx](https://www.lyx.org/).
-
-### StarUML
-`docs/pvzUML.mdj` is the UML diagram of the important basic classes in the project, which needs to be opened using [StarUML](https://staruml.io/download/) software.
+The `docs` folder contain the chinese documentation, making it easy to quickly understand the project. English documentation currently is unavailable.
 
 ## Development In Progress
 Due to time constraints, features such as game progress saving and level unlocking are still under development. Additionally, considering the project's scale, further adjustments will be made in the future.
