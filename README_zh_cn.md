@@ -14,18 +14,20 @@
 
 针对以上需要改进的要点，我做了如下变动:
 - 由于cocos2dx原生支持CMake配置，因此使用CMake 3.6配置该项目。
-- 使用开源的QtCreator 5.12开发，安装方便，配置迅速。
+- 使用开源的VSCode开发，安装方便，配置迅速。
 - 删减了一些次要的游戏效果和功能，将项目规模缩小到8000行C++代码，便于初学者学习。
 - 对cocos2dx库和项目代码应用C++17标准。
 
 最后基于我对C++的理解，对本项目的基础类重新进行了设计，包括类与类之间的解耦，语义的明确和C++17语法的应用。
+
+## 运行示例
+![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70)
 
 ## 运行要求
 * 目前在Ubuntu 22.04上测试通过，其他Ubuntu版本请自行测试。
 * CMake >= 3.16。<br>
 
 ## 安装依赖
-
 1. 克隆本项目（先安装git-lfs），安装cocos2dx所需的依赖。注意cocos2dx已经包含在本项目中，无需额外安装。
 ```shell
 git clone --recursive https://github.com/Xi-Gong/Plants-Vs-Zombies.git
@@ -57,21 +59,12 @@ cd bin/pvz
 ./pvz
 ```
 
-## 游戏素材
-***注意！！！游戏素材文件仅用于学习，切勿用于商业用途。如有侵权请联系我***
-
-## 完整文档
-`docs`文件夹下包含中文文档，便于快速了解该项目。
-
 ## 项目类图
 这里由于我对基础类进行了一些修改，并绘制了相应的UML图。完整的UML图请参见LZ的项目。
 ![ClassDiagram](https://github.com/Xi-Gong/Plants-Vs-Zombies/blob/main/pvzBasicClassUML.png?raw=true)
 
-## 运行示例
-![Image(图片)](https://img-blog.csdnimg.cn/20200405101902466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNjMwMjQ2,size_16,color_FFFFFF,t_70)
-
-## 部分功能仍在开发中
-限于时间，游戏进度存档，关卡逐步解锁等功能尚未完成开发。另外考虑到项目的规模，今后还会进行一些调整。
+## 游戏素材
+***注意！！！游戏素材文件仅用于学习，切勿用于商业用途。如有侵权请联系我***
 
 ## 联系方式
 **Email: gongxi@mail.nankai.edu.cn** <br>
