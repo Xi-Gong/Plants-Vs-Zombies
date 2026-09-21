@@ -1,3 +1,5 @@
+
+
 # Plants-Vs-Zombies (LZ Linux version)
 ![C++](https://img.shields.io/badge/language-C%2B%2B-red)
 ![CMake](https://img.shields.io/badge/build-CMake-blue)
@@ -18,7 +20,7 @@ To address these areas for improvement, I made the following changes:
 - Since cocos2dx natively supports CMake configuration, I configured the project using CMake.
 - I used the open-source VSCode for development, which is easy to install and configure quickly.
 - I removed some secondary game effects and functionalities, reducing the project's size to 8,000 lines of C++ code, making it easier for beginners to learn.
-- C++17 standard is applied to the cocos2dx library and project code.
+- C++17 standard is applied to the cocos2d library and project code.
 
 Finally, based on my understanding of C++, I redesigned the basic classes of this project, including decoupling between classes, clarifying semantics, and applying C++17 syntax.
 
@@ -32,7 +34,7 @@ In the project’s root directory, there’s a video called `pvzExampleVideo.mkv
 * CMake >= 3.16.
 
 ## Environment
-1. Clone this project (install git-lfs first) and install the dependencies required for cocos2dx. Note that cocos2dx itself is already included with the project, so there’s no need for a separate installation.
+1. Clone this project (install git-lfs first) and install the dependencies required for cocos2dx. Note that cocos2dx itself is already included with the project (3.17.2), so there’s no need for a separate installation.
 ```shell
 git clone --recursive https://github.com/Xi-Gong/Plants-Vs-Zombies.git
 cd Plants-Vs-Zombies/cocos2d/
